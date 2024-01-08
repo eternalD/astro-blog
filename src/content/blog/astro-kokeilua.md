@@ -15,4 +15,4 @@ Ensikokemukset Astrosta ovat se et todella mukava kehittää asioita tämän pä
 
 ## Seuraavat askeleet
 
-Haluan seuraavaksi tehdä palvelusta enemmän oman näköiseni mutta ennen kuin tämä tapahtuu käytän tätä pohjaa apuna kirjoitusteni paikkana.
+Haluan seuraavaksi tehdä palvelusta enemmän oman näköiseni, mutta ennen kuin tämä tapahtuu käytän tätä pohjaa apuna kirjoitusteni paikkana.

@@ -20,4 +20,4 @@ Pidän todella paljon palvelussa
 * monipuolinen <a href="https://www.smashingmagazine.com/2019/07/inspired-design-decisions-pressing-matters/"/>compound-gridin käyttö</a>. Oheisessa pitkähkössä artikkelissa on kuvattu seikkaperäisesti mitä tarkoitan.
 * Omanlainen muotokieli
 * Hyvin valittu typografia
-
+* Pinnan alla oleva CSS on todella mielenkiintoista lukea

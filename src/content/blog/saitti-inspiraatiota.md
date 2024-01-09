@@ -9,7 +9,7 @@ heroImage: '/blog-placeholder-2.jpg'
 
 ## Joustavat Gridi ja typografia
 
-Olen kiinnostunut typografiasta ja haluaisinkin, että palveluni kuvastaisi sitä. <a href="https://utopia.fyi/">Utopia</a> palvelussa on hyvin kuvattu se mitä tarkoitan. 
+Olen kiinnostunut typografiasta ja haluaisinkin, että palveluni kuvastaisi sitä. <a href="https://utopia.fyi/">Utopia</a> palvelussa on hyvin kuvattu se mitä tarkoitan joustavalla typografialla. 
 
 ## Suunnittelija Andy Clarke
 
@@ -17,7 +17,9 @@ Olen pidemmän aikaa seurannut <a href="https://stuffandnonsense.co.uk">Andy Cla
 
 Pidän todella paljon palvelussa
 
-* monipuolinen <a href="https://www.smashingmagazine.com/2019/07/inspired-design-decisions-pressing-matters/"/>compound-gridin käyttö</a>. Oheisessa pitkähkössä artikkelissa on kuvattu seikkaperäisesti mitä tarkoitan.
+* monipuolinen <a href="https://www.smashingmagazine.com/2019/07/inspired-design-decisions-pressing-matters/"/>compound-gridin käyttö</a>. Oheisessa pitkähkössä artikkelissa on kuvattu seikkaperäisesti mitä tarkoitan. 
+
+* tässä myös työkalu <a href="https://stuffandnonsense.co.uk/layoutlove/tool.html">Layout Love -työkalu</a> ja <a href="https://codepen.io/michellebarker/pen/zYOMYWv">Michelle Barkerin toinen työkalua</a>. Suosittelen kuitenin katsastamaan Layout Lovesta miten gridi integroidaan haluaamaasi elementtiin
 * Omanlainen muotokieli
 * Hyvin valittu typografia
 * Pinnan alla oleva CSS on todella mielenkiintoista lukea

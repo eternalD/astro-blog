@@ -21,7 +21,7 @@ Pidän todella paljon palvelussa
 
 * monipuolinen <a href="https://www.smashingmagazine.com/2019/07/inspired-design-decisions-pressing-matters/"/>compound-gridin käyttö</a>. Oheisessa pitkähkössä artikkelissa on kuvattu seikkaperäisesti mitä tarkoitan. 
 
-* tässä myös työkalu <a href="https://stuffandnonsense.co.uk/layoutlove/tool.html">Layout Love -työkalu</a> ja <a href="https://codepen.io/michellebarker/pen/zYOMYWv">Michelle Barkerin toinen työkalu</a>. Suosittelen kuitenkin katsastamaan Layout Lovesta miten gridi integroidaan haluaamaasi elementtiin.
+* tässä myös <a href="https://stuffandnonsense.co.uk/layoutlove/tool.html">Layout Love -työkalu</a> ja <a href="https://codepen.io/michellebarker/pen/zYOMYWv">Michelle Barkerin toinen työkalu</a>. Suosittelen kuitenkin katsastamaan Layout Lovesta miten gridi integroidaan haluaamaasi elementtiin.
 * Omanlainen muotokieli
 * Hyvin valittu typografia
 * Pinnan alla oleva CSS on todella mielenkiintoista lukea

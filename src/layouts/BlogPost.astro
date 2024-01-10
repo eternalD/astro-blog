@@ -14,19 +14,45 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 	<head >
 		<BaseHead title={title} description={description} />
 		<style>
+			:root {
+				/*--conial-size: 100% 100%;
+				--conial-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
+				--conial-pattern-1: radial-gradient(18% 28% at 24% 50%, #CEFAFFFF 7%, #073AFF00 100%),radial-gradient(18% 28% at 18% 71%, #FFFFFF59 6%, #073AFF00 100%),radial-gradient(70% 53% at 36% 76%, #73F2FFFF 0%, #073AFF00 100%),radial-gradient(42% 53% at 15% 94%, #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(42% 53% at 34% 72%, #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(18% 28% at 35% 87%, #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(31% 43% at 7% 98%, #FFFFFFFF 24%, #073AFF00 100%),radial-gradient(21% 37% at 72% 23%, #D3FF6D9C 24%, #073AFF00 100%),radial-gradient(35% 56% at 91% 74%, #8A4FFFF5 9%, #073AFF00 100%),radial-gradient(74% 86% at 67% 38%, #6DFFAEF5 24%, #073AFF00 100%),linear-gradient(125deg, #4EB5FFFF 1%, #4C00FCFF 100%);
+				--conial-pattern-2: radial-gradient(18% 28% at 24% 50%, #CEFAFFFF 7%, #073AFF00 100%),radial-gradient(18% 28% at 18% 71%, #FFFFFF59 6%, #073AFF00 100%),radial-gradient(70% 53% at 36% 76%, #73F2FFFF 0%, #073AFF00 100%),radial-gradient(42% 53% at 15% 94%, #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(42% 53% at 34% 72%, #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(18% 28% at 35% 87%, #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(31% 43% at 7% 98%, #FFFFFFFF 24%, #073AFF00 100%),radial-gradient(21% 37% at 72% 23%, #D3FF6D9C 24%, #073AFF00 100%),radial-gradient(35% 56% at 91% 74%, #8A4FFFF5 9%, #073AFF00 100%),radial-gradient(74% 86% at 67% 38%, #6DFFAEF5 24%, #073AFF00 100%),linear-gradient(125deg, #4EB5FFFF 1%, #4C00FCFF 100%);
+				--conial-pattern-3: radial-gradient(18% 28% at 24% 50%, #CEFAFFFF 7%, #073AFF00 100%),radial-gradient(18% 28% at 18% 71%, #FFFFFF59 6%, #073AFF00 100%),radial-gradient(70% 53% at 36% 76%, #73F2FFFF 0%, #073AFF00 100%),radial-gradient(42% 53% at 15% 94%, #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(42% 53% at 34% 72%, #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(18% 28% at 35% 87%, #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(31% 43% at 7% 98%, #FFFFFFFF 24%, #073AFF00 100%),radial-gradient(21% 37% at 72% 23%, #D3FF6D9C 24%, #073AFF00 100%),radial-gradient(35% 56% at 91% 74%, #8A4FFFF5 9%, #073AFF00 100%),radial-gradient(74% 86% at 67% 38%, #6DFFAEF5 24%, #073AFF00 100%),linear-gradient(125deg, #4EB5FFFF 1%, #4C00FCFF 100%);*/
+;
+			}
+			
 			main {
 				width: calc(100% - 2em);
 				max-width: 100%;
 				margin: 0;
 			}
-			.hero-image {
-				width: 100%;
+			/*.hero-image {
+				height: calc(100vh - 4rem);
+				
+			}*/
+
+			/*.hero-1 {
+				background-size: var(--conial-size);
+				background-position: var(--conial-position);
+				background-image: var(--conial-pattern-1);
 			}
+
+			.hero-2 {
+				background-image: var(--conial-pattern-2);
+			}
+			
+			.hero-3 {
+				background-image: var(--conial-pattern-3);
+			}*/
+			
 			.hero-image img {
 				display: block;
 				margin: 0 auto;
 				border-radius: 12px;
 				box-shadow: var(--box-shadow);
+				
 			}
 			.prose {
 				width: 720px;
@@ -35,6 +61,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				padding: 1rem;
 				color: rgb(var(--gray-dark));
 			}
+
 			.title {
 				margin-bottom: 1rem;
 				padding: 1em 0;
@@ -45,7 +72,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				margin: 0 0 0.5em 0;
 			}
 			.date {
-				margin-bottom: 0.5em;
+				margin-bottom: 0.5rem;
 				color: rgb(var(--gray));
 			}
 			.last-updated-on {

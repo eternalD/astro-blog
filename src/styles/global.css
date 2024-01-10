@@ -180,8 +180,8 @@ hr {
 	}
 
 	main a:hover {
-		background-color: #777;
 		color:inherit;
+		text-decoration: underline;
 	}
 	
 }

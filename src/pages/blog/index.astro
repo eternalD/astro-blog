@@ -72,8 +72,9 @@ const posts = (await getCollection('blog')).sort(
 				color: rgb(var(--accent));
 			}
 			ul a:hover img {
-				box-shadow: var(--box-shadow);
+				
 			}
+
 			@media (max-width: 720px) {
 				ul {
 					gap: 0.5em;
@@ -97,6 +98,16 @@ const posts = (await getCollection('blog')).sort(
 
 				.date { 
 					color:#fff;
+				}
+
+				main a:hover {
+					background-color: transparent;
+					color:#fff;
+					text-decoration: underline;
+				}	
+
+				ul a:hover img {
+					box-shadow: none;
 				}
 			}
 		</style>

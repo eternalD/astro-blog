@@ -25,4 +25,4 @@ Halusin implementoida dark moden ja kokeilla miten nopeasti sen saa paikalleen. 
 
 ## Seuraavat askeleet
 
-Nyt on hyvä pysähtyä ja miettiä mitä näiden jälkeen. Saa ehdottaa mulle mitä seuraavaksi.
+Nyt on hyvä pysähtyä ja miettiä mitä näiden jälkeen. Saa ehdottaa mulle mitä seuraavaksi olisi hyvä ottaa työn alle tai kokeiluun.

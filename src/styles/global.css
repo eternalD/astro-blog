@@ -62,7 +62,7 @@ h5,
 h6 {
 	margin: 0 0 0.5rem 0;
 	color: rgb(var(--black));
-	font-size:var(--fluid-16-48);
+	font-size: var(--fluid-16-48);
 	line-height: 1.2;
 }
 
@@ -103,9 +103,7 @@ code {
 	background-color: rgb(var(--gray-light));
 	border-radius: 2px;
 }
-ul {
-	font-size: var(--fluid-16-24);
-}
+
 pre {
 	padding: 1.5rem;
 	border-radius: 8px;

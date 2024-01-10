@@ -83,6 +83,16 @@ const posts = (await getCollection('blog')).sort(
 					font-size: 1.563em;
 				}
 			}
+
+			@media (prefers-color-scheme: dark) {
+				.title {
+					color:#fff;
+				}
+
+				.date { 
+					color:#fff;
+				}
+			}
 		</style>
 	</head>
 	<body>

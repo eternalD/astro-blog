@@ -54,4 +54,25 @@ import { SITE_TITLE } from '../consts';
 			display: none;
 		}
 	}
+
+	@media (prefers-color-scheme: dark) {
+		header {
+			background:#1b1b1b;
+		}
+
+		header a {
+			color:#fff;
+			
+		}
+
+		header a:hover {
+			background-color: #777;
+		}
+
+		nav a.active {
+			border-bottom-color: #fff;
+		}
+
+	}
+
 </style>

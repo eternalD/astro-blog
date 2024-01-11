@@ -21,7 +21,7 @@
 	--fluid-16-48: clamp(1rem, 0.3043rem + 3.4783vw, 3rem);
 	--fluid-16-24: clamp(1rem, 0.8261rem + 0.8696vw, 1.5rem);
 }
-@font-face {
+/*@font-face {
 	font-family: 'Atkinson';
 	src: url('/fonts/atkinson-regular.woff') format('woff');
 	font-weight: 400;
@@ -34,9 +34,9 @@
 	font-weight: 700;
 	font-style: normal;
 	font-display: swap;
-}
+}*/
 body {
-	font-family: 'Atkinson', sans-serif;
+	font-family: 'PT Sans', sans-serif;
 	margin: 0;
 	padding: 0;
 	text-align: left;

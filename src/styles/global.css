@@ -89,6 +89,22 @@ p {
 .prose ul {
 	font-size:var(--fluid-16-24);
 }
+.interest-topics {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.interest-topics li:first-child,
+.interest-topics li:nth-child(4),
+.interest-topics li:nth-child(8) {
+	width: 100%;
+}
+
+.interest-topics li {
+	width: calc(48% - 1rem);
+}
+
 
 textarea {
 	width: 100%;
@@ -128,11 +144,15 @@ hr {
 	border: none;
 	border-top: 1px solid rgb(var(--gray-light));
 }
+
+
 @media (max-width: 720px) {
 	
 	main {
 		padding: 1rem;
 	}
+
+	
 }
 
 .sr-only {

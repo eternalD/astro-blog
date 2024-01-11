@@ -13,7 +13,7 @@ Päätin jatkaa Astron parissa ja testata kuinka helppoa erilaisten asioiden pai
 
 ## View Transitiot
 
-Koska chromium pohjaiset selaimet tukevat View transitioita päätin ottaa ne kokeiluun ja laittaa ne paikalleen. Ohjeet olivat suht iisejä seurata ja löytyvät <a href="https://docs.astro.build/en/guides/view-transitions/">täältä</a>. 
+Koska Chromium pohjaiset selaimet tukevat View transitioita päätin ottaa ne kokeiluun ja laittaa ne paikalleen. Ohjeet olivat suht iisejä seurata ja löytyvät <a href="https://docs.astro.build/en/guides/view-transitions/">täältä</a>. 
 
 ## Joustava typografia
 

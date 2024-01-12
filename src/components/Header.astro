@@ -1,17 +1,16 @@
 ---
+import { Image } from 'astro:assets';
 import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
 ---
 
 <header>
 	<nav>
-		<h2><a href="/">{SITE_TITLE}</a></h2>
+		<h2 class="site-icon"><a href="/">{SITE_TITLE}</a></h2>
 		<div class="internal-links">
-			<HeaderLink href="/">Etusivu</HeaderLink>
 			<HeaderLink href="/blog">Blogi</HeaderLink>
 			<HeaderLink href="/minusta">Minusta</HeaderLink>
-		</div>
-		
+		</div>	
 	</nav>
 </header>
 <style>
@@ -46,11 +45,6 @@ import { SITE_TITLE } from '../consts';
 		border-bottom: 4px solid transparent;
 		text-decoration: none;
 		font-size:var(--fluid-13-18);	
-	}
-
-	nav h2 a {
-		padding: 0 .5rem;
-		display: inline-block;
 	}
 
 	nav a.active {

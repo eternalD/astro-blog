@@ -89,6 +89,8 @@ p {
 .prose ul {
 	font-size:var(--fluid-16-24);
 }
+
+/* Bullet points for minusta page */
 .interest-topics {
 	display: flex;
 	flex-wrap: wrap;

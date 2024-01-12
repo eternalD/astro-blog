@@ -32,6 +32,6 @@ Ainakin seuraavaa:
 
 Nämä on tullut mieleen kokeiluosastolta:
 
-* CSS Container Queryjen kokeilu (https://developer.mozilla.org/en-US/blog/getting-started-with-css-container-queries/ )
+* CSS Container Queryjen kokeilu (https://developer.mozilla.org/en-US/blog/getting-started-with-css-container-queries/ ). esim. blogilistaukset ja niiden asemointi kun artikkeleita tulee paljon.
 * nykyisten kuvien korvaaminen css-taustakuvilla (riippuu kokonaan siitä millainen tyyli palveluun tulee). 
 

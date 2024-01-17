@@ -54,6 +54,7 @@ main {
 	margin: auto;
 	padding: 3rem 1rem;
 }
+
 h1,
 h2,
 h3,
@@ -64,6 +65,7 @@ h6 {
 	color: rgb(var(--black));
 	font-size: var(--fluid-16-48);
 	line-height: 1.2;
+	text-wrap: balance;
 }
 
 strong,

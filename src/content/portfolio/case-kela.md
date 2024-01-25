@@ -15,13 +15,13 @@ Sovimme, että tapaan ekaksi tiimin ja katsotaan löytyisikö omasta osaamisalue
 
 ## Tiimin tapaaminen
 
-Esittäydyin ja kerroin omista vahvuusalueistani. Kerroin ensimmäsenä, että minulla on toinen jalka vahvasti käyttöliittymäteknologioissa ja siinä miten palveluita rakennetaan saavutettavasti ja web-standardeihin pohjautuen. Poislukien vahva Javascript-kehitys.
+Esittäydyin ja kerroin omista vahvuusalueistani. Kerroin ensimmäisenä, että minulla on toinen jalka vahvasti käyttöliittymäteknologioissa ja siinä miten palveluita rakennetaan saavutettavasti ja web-standardeihin pohjautuen. Poislukien ammattimainen ja vahva Javascript-kehitys.
 
 Toinen puoli minusta on vahvasti ketterässä ja osallistavassa suunnittelussa. Näin eri tiimin osapuolet huomioidaan lopputuloksessa ja ns. sankarisuunnittelu jää vähemmälle huomiolle. 
 
 ## Sankarisuunnittelun poteroista kohti yhteissuunnittelua
 
-Uskon vahvasti osallistavaan suunnitteluun niin, että tiimi omistaa asian eikä ulkoista suunnittelua kokonaan toiselle taholle / yritykselle. Lisäksi vahva usko asioiden kokeiluun eli siihen, että asioista tehdään jotain kokeiltavaa. Loppukäyttäjiltä saadaan tämän kautta palautetta tekemiselle. 
+Uskon vahvasti osallistavaan suunnitteluun niin, että tiimi omistaa asian eikä ulkoista suunnittelua kokonaan toiselle taholle. Lisäksi vahva usko asioiden kokeiluun eli siihen, että asioista tehdään jotain kokeiltavaa. Loppukäyttäjiltä saadaan tämän kautta palautetta tekemiselle. 
 
 ## Lean UX metodit auttoivat yhteissuunnittelussa
 

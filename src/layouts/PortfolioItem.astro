@@ -1,0 +1,132 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import FormattedDate from '../components/FormattedDate.astro';
+type Props = CollectionEntry<'portfolio'>['data'];
+
+const { title, description, pubDate, updatedDate, heroImage, tags } = Astro.props;
+
+---
+
+<html lang="fi">
+	<head >
+		<BaseHead title={title} description={description} />
+		<style>
+			
+			main {
+				width: calc(100% - 2em);
+				max-width: 100%;
+				margin: 0;
+			}
+			
+			.hero-image img {
+				display: block;
+				margin: 0 auto;
+				
+			}
+			.prose {
+				width: 720px;
+				max-width: calc(100% - 2em);
+				margin: auto;
+				padding: 1rem;
+				color: rgb(var(--gray-dark));
+			}
+
+			.title {
+				margin-bottom: 1rem;
+				padding: 1em 0;
+				text-align: center;
+				line-height: 1;
+				
+			}
+			.title h1 {
+				margin: 0 0 0.5em 0;
+			}
+			.date {
+				margin-bottom: 0.5rem;
+				color: rgb(var(--gray));
+			}
+			.last-updated-on {
+				font-style: italic;
+				padding-top:.5rem
+			}
+
+			.tags {
+				display: flex;
+				justify-content: center;
+				list-style-type: none;
+				padding:0;
+			}
+
+			.tag-item {
+				padding-left: .5rem;
+				padding: .5rem;
+				margin-right:1rem;
+				border-radius: 12px;
+				background-color: #ccc;
+				font-size:var(--fluid-13-18);
+				
+			}
+
+			.tag-item a {
+				color:#fff;
+				text-decoration: none;
+			}
+
+			@media (prefers-color-scheme: dark) { 
+				
+				.date {
+					color:#fff;
+				}
+
+				.tag-item {
+				background-color: #000;
+				color:#fff;
+				
+			}
+					
+			}
+		</style>
+	</head>
+
+	<body>
+		<Header />
+		<main>
+			<article>
+				<div class="hero-image">
+					{heroImage && <img width={1020} height={510} src={heroImage} alt="" />}
+				</div>
+				<div class="prose">
+					<div class="title">
+						<div class="date">
+							<FormattedDate date={pubDate} />
+							{
+								updatedDate && (
+									<div class="last-updated-on">
+										Päivitetty viimeksi <FormattedDate date={updatedDate} />
+									</div>
+								)
+							}
+						</div>
+						<h1>{title}</h1>
+						<hr />
+						<ul class="tags">
+							<!-- TODO:
+							1. li item. underscore item
+							2. a href wrapped tag list
+							3. EPIC: TAG ARCHIVE AS NEXT STEP ...[tag]  -->
+							{tags.map(tag => (
+								<li class="tag-item" key={tag}>{tag}</li>
+							))}
+							<!--{tags}-->
+						</ul>
+					</div>
+					<slot />
+				</div>
+			</article>
+		</main>
+		<Footer />
+	</body>
+</html>

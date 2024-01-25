@@ -4,6 +4,8 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
+import BlogPrevNext from '../components/BlogPrevNext.astro';
+
 type Props = CollectionEntry<'blog'>['data'];
 
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
@@ -69,6 +71,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				padding: 1em 0;
 				text-align: center;
 				line-height: 1;
+				
 			}
 			.title h1 {
 				margin: 0 0 0.5em 0;
@@ -119,6 +122,9 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				</div>
 			</article>
 		</main>
-		<Footer />
+		
+    </nav>
+	<BlogPrevNext />
+	<Footer />
 	</body>
 </html>

@@ -1,0 +1,52 @@
+--- 
+import type { CollectionEntry } from 'astro:content';
+type Props = CollectionEntry<'blog'>['data'];
+const { title } = Astro.props;
+
+---
+
+<!--<ul class="nav-next-prev">
+	<li>
+        <a href="#prev" rel="prev">
+            <span>&laquo; Edellinen</span>
+            <span class="nav-title">Otsikko</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="#next" rel="next"> 
+            <span>Seuraava &raquo;</span>
+            <span class="nav-title">Otsikko</span>
+        </a>
+    </li>
+</ul> -->
+<style>
+	.nav-next-prev {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: nowrap;
+		list-style: none;
+		font-size: 1rem;	
+	}
+	.nav-next-prev li:last-child {
+	    padding-right:2rem;
+
+	}
+	.nav-title {
+	    font-size: 1.2rem;
+		display: block;
+	}
+
+	@media (prefers-color-scheme: dark) { 
+	
+		.nav-title {
+			color:#fff;
+		}
+
+		.nav-next-prev a {
+			color:#fff;
+			text-decoration: none;
+		}		
+					
+	}
+</style>

@@ -31,9 +31,12 @@ Uskon vahvasti osallistavaan suunnitteluun niin, että tiimi omistaa asian eikä
 
 Tiimiydyimme ja piirsimme kynällä ja paperille erilaisia versioita halutuista käyttöliittymistä. Nämä paperiprototyypit testattiin tavalllisilla kaduntallaajilla tehdyssä kenttätutkimuksessa. Haimme palautetta sekä jatkoideoita tehtyihin ratkaisuihin.
 
+## Data olennaisena osana tekemistä
+Tonin kanssa työskennellessä on aina mahtavaa se, että tiedon jyväset on usein keräilty ymmärrettävään muotoon ja niin oli nytkin. Mietimme tiimin kanssa yhdessä miten saamme jalostettua eri kanavien ja kosketuspisteiden(englanniksi touchpoints) tiedon helposti ymmärrettävään muotoon. Tästä kerronkin seuraavaksi.
+
 ## Elämäntilanteet keskiööön
 
-Kun palautteet paperiprotoihin oli saatu tehtiin synteesit niistä koko tiimin kesken. Tiimi teki tämän pohjalta päätöksen, että elämäntilaneet tulevat ohjaamaan suunnittelua. Jonkinlainen pikaopas palvelun käyttäjille olisi myös kätevä. Tästä olikin hyvä jatkaa eteenpäin.
+Kun palautteet paperiprotoihin ja analysoitu tieto eri kanavista ja kosketuspisteitä oli analysoitu tehtiin synteesit niistä koko tiimin kesken. Tiimi teki tämän pohjalta päätöksen, että elämäntilaneet tulevat ohjaamaan suunnittelua. Lisäksi jonkinlainen pikaopas palvelun käyttäjille olisi myös kätevä. Tästä olikin hyvä jatkaa eteenpäin.
 
 <img src="/portfolio-kela-2.jpg" alt="" width=960 height=480/>
 

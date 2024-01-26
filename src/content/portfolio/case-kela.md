@@ -36,7 +36,7 @@ Tonin kanssa työskennellessä on aina mahtavaa se, että tiedon jyväset on use
 
 ## Elämäntilanteet keskiööön
 
-Kun palautteet paperiprotoihin ja analysoitu tieto eri kanavista ja kosketuspisteistä oli pureskelti, tehtiin synteesit niistä koko tiimin kesken. Tiimi teki tämän pohjalta päätöksen, että elämäntilaneet tulevat ohjaamaan suunnittelua. Lisäksi jonkinlainen pikaopas palvelun käyttäjille olisi myös kätevä. Tästä olikin hyvä jatkaa eteenpäin.
+Kun palautteet paperiprotoihin ja analysoitu tieto eri kanavista ja kosketuspisteistä oli pureskeltu, tehtiin synteesit niistä koko tiimin kesken. Tiimi teki tämän pohjalta päätöksen, että elämäntilaneet tulevat jatkossa ohjaamaan suunnittelua. Lisäksi totesimme, että jonkinlainen pikaopas palvelun käyttäjille olisi myös kätevä. Tästä olikin hyvä jatkaa eteenpäin.
 
 <img src="/portfolio-kela-2.jpg" alt="" width=960 height=480/>
 

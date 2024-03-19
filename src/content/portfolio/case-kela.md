@@ -40,9 +40,9 @@ Kun palautteet paperiprotoihin ja analysoitu tieto eri kanavista ja kosketuspist
 
 <img src="/portfolio-kela-2.jpg" alt="" width=960 height=480/>
 
-## Pikaoppaat syntyivät lopputulemana
+## Pikaoppaat syntyivät yhtenä lopputulemana
 
-Hyödynsimme protoiluosaamistani ja rakensin tämän pohjalta ensimmäiset prototyypit selaimeen Kelan sivuilla olevista pikaopas malleista. 
+Hyödynsimme protoiluosaamistani ja rakensin tämän pohjalta ensimmäiset prototyypit selaimeen Kelan sivuilla olevista pikaopas-malleista. 
 
 Ideana oli, että elämäntilanteiden lisäksi tarjoiltiin pikaopas siihen mitä milloinkin tapahtuu ja kenen vastuulla asia on (esim. Kela, hakija). Prototyypista tuotantokelpoiseksi jatkojalosti muistaakseni <a href="https://www.ambientia.fi/">Ambientia</a>.
 

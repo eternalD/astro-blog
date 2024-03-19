@@ -86,22 +86,26 @@ const { title, description, pubDate, updatedDate, heroImage, prevBlogSlug, nextB
 				padding-top:.5rem
 			}
 
-			.nav-next-prev {
-				display: flex;
-				justify-content: space-between;
-				flex-wrap: nowrap;
-				list-style: none;
-				font-size: 1rem;	
-			}
+		.nav-next-prev {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: nowrap;
+			list-style: none;
+			font-size: 1rem;	
+		}
+
+		.nav-prev {
+			padding-inline-start: 1rem;
+		}
 
 		.nav-next-prev li:last-child {
-	    	padding-right:2rem;
+	    	padding-inline-end:2rem;
 		}
 
 		.nav-title {
 	    	font-size: 1.2rem;
 			display: block;
-		x§}
+		}
 
 	@media (prefers-color-scheme: dark) { 
 				
@@ -152,7 +156,7 @@ const { title, description, pubDate, updatedDate, heroImage, prevBlogSlug, nextB
     </nav>
 	<ul class="nav-next-prev">
 		{prevBlogSlug &&
-		<li>
+		<li class="nav-prev">
 			 
 			<a href=`/blog/${prevBlogSlug}` rel="prev">
 				<span class="nav-title">&laquo; {prevTitle}</span>
@@ -160,7 +164,7 @@ const { title, description, pubDate, updatedDate, heroImage, prevBlogSlug, nextB
 		</li>
 		}
 		{nextBlogSlug && 
-		<li>
+		<li class="nav-next">
 			
 			<a href=`/blog/${nextBlogSlug}` rel="next">
 				<span class="nav-title">{nextTitle} &raquo;</span>

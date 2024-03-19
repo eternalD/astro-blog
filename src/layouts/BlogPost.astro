@@ -8,7 +8,8 @@ import BlogPrevNext from '../components/BlogPrevNext.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, prevBlogSlug, nextBlogSlug, prevTitle, nextTitle } = Astro.props;
+
 
 ---
 
@@ -85,15 +86,40 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				padding-top:.5rem
 			}
 
-
-			@media (prefers-color-scheme: dark) { 
-				
-				.date {
-					color:#fff;
-				}		
-					
+			.nav-next-prev {
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: nowrap;
+				list-style: none;
+				font-size: 1rem;	
 			}
-		</style>
+
+		.nav-next-prev li:last-child {
+	    	padding-right:2rem;
+		}
+
+		.nav-title {
+	    	font-size: 1.2rem;
+			display: block;
+		x§}
+
+	@media (prefers-color-scheme: dark) { 
+				
+		.date {
+			color:#fff;
+		}		
+				
+		.nav-title {
+			color:#fff;
+		}
+
+		.nav-next-prev a {
+			color:#fff;
+			text-decoration: none;
+		}		
+		
+	}
+	</style>
 	</head>
 
 	<body>
@@ -124,7 +150,26 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 		</main>
 		
     </nav>
-	<BlogPrevNext />
+	<ul class="nav-next-prev">
+		{prevBlogSlug &&
+		<li>
+			 
+			<a href=`/blog/${prevBlogSlug}` rel="prev">
+				<span class="nav-title">&laquo; {prevTitle}</span>
+			</a>
+		</li>
+		}
+		{nextBlogSlug && 
+		<li>
+			
+			<a href=`/blog/${nextBlogSlug}` rel="next">
+				<span class="nav-title">{nextTitle} &raquo;</span>
+			</a>
+			
+		</li>
+		}
+	</ul>
+	
 	<Footer />
 	</body>
 </html>

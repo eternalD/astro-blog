@@ -86,23 +86,34 @@ const { title, description, pubDate, updatedDate, heroImage, prevBlogSlug, nextB
 			}
 
 		.nav-next-prev {
-			display: flex;
-			justify-content: space-between;
-			flex-wrap: nowrap;
-			list-style: none;
-			font-size: 1rem;	
+			display: grid;
+  			grid-template-columns: repeat(auto-fit,minmax(min(18rem,100%),1fr));
+  			gap: 2rem;
 		}
 
-		.nav-prev {
-			padding-inline-start: 1rem;
+		.nav-next-prev li {
+			list-style-type: none;
+			align-items: center;
+  			justify-content: flex-start;
+  			gap: .5rem;
+  			width: 100%;
+  			flex-basis: calc(50% - .5rem);
+  			flex-grow: 1;
+  			border: 1px solid var(--sl-color-gray-5);
+  			border-radius: .5rem;
+  			padding-inline-start: .5rem;
+			padding-inline-end: .5rem;
+			padding-block-start: .5rem;
+			padding-block-end: .5rem;  
+  			text-decoration: none;
+  			color: var(--sl-color-gray-2);
+  			box-shadow: var(--sl-shadow-md);
+  			overflow-wrap: anywhere;
 		}
-
-		.nav-next-prev li:last-child {
-	    	padding-inline-end:2rem;
-		}
-
+		
 		.nav-title {
 	    	font-size: 1.2rem;
+			
 			display: block;
 		}
 
@@ -155,8 +166,7 @@ const { title, description, pubDate, updatedDate, heroImage, prevBlogSlug, nextB
     </nav>
 	<ul class="nav-next-prev">
 		{prevBlogSlug &&
-		<li class="nav-prev">
-			 
+		<li class="nav-prev"> 
 			<a href=`/blog/${prevBlogSlug}` rel="prev">
 				<span class="nav-title">&laquo; {prevTitle}</span>
 			</a>
@@ -164,11 +174,9 @@ const { title, description, pubDate, updatedDate, heroImage, prevBlogSlug, nextB
 		}
 		{nextBlogSlug && 
 		<li class="nav-next">
-			
 			<a href=`/blog/${nextBlogSlug}` rel="next">
 				<span class="nav-title">{nextTitle} &raquo;</span>
 			</a>
-			
 		</li>
 		}
 	</ul>

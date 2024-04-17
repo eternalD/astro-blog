@@ -39,7 +39,8 @@
 	font-display: swap;
 }*/
 body {
-	font-family: 'PT Sans', sans-serif;
+	font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+	font-weight: normal;
 	margin: 0;
 	padding: 0;
 	text-align: left;
@@ -67,7 +68,7 @@ h6 {
 	margin: 0 0 0.5rem 0;
 	color: rgb(var(--black));
 	font-size: var(--fluid-16-48);
-	font-weight: 700;
+	font-weight: 600;
 	line-height: 1.2;
 	text-wrap: balance;
 }

@@ -11,13 +11,13 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "^4.0.5",
+    "@astrojs/mdx": "^4.0.6",
     "@astrojs/rss": "^4.0.11",
     "@astrojs/sitemap": "^3.2.1",
     "@astrojs/vercel": "^8.0.2",
     "@vercel/analytics": "^1.1.1",
     "@vercel/speed-insights": "^1.0.2",
-    "astro": "^5.1.6",
+    "astro": "^5.1.7",
     "npm": "^10.8.1"
   }
 }

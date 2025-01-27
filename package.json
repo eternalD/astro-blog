@@ -14,10 +14,10 @@
     "@astrojs/mdx": "^4.0.7",
     "@astrojs/rss": "^4.0.11",
     "@astrojs/sitemap": "^3.2.1",
-    "@astrojs/vercel": "^8.0.2",
+    "@astrojs/vercel": "^8.0.4",
     "@vercel/analytics": "^1.1.1",
     "@vercel/speed-insights": "^1.0.2",
-    "astro": "^5.1.8",
+    "astro": "^5.1.9",
     "npm": "^10.8.1"
   }
 }

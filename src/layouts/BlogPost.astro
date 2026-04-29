@@ -170,24 +170,22 @@ const { title, description, pubDate, updatedDate, heroImage, prevBlogSlug, nextB
 			</article>
 		</main>
 		
-    </nav>
-	<ul class="nav-next-prev">
-		{prevBlogSlug &&
-		<li class="nav-prev"> 
-			<a href=`/blog/${prevBlogSlug}` rel="prev">
-				<span class="nav-title">&laquo; {prevTitle}</span>
-			</a>
-		</li>
-		}
-		{nextBlogSlug && 
-		<li class="nav-next">
-			<a href=`/blog/${nextBlogSlug}` rel="next">
-				<span class="nav-title">{nextTitle} &raquo;</span>
-			</a>
-		</li>
-		}
-	</ul>
-	
-	<Footer />
-	</body>
+		<nav>
+		<ul class="nav-next-prev">
+			{prevBlogSlug &&
+			<li class="nav-prev"> 
+				<a href={`/blog/${prevBlogSlug}`} rel="prev">
+					<span class="nav-title">&laquo; {prevTitle}</span>
+				</a>
+			</li>
+			}
+			{nextBlogSlug && 
+			<li class="nav-next">
+				<a href={`/blog/${nextBlogSlug}`} rel="next">
+					<span class="nav-title">{nextTitle} &raquo;</span>
+				</a>
+			</li>
+			}
+		</ul>
+		</nav>
 </html>

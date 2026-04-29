@@ -1,0 +1,52 @@
+---
+import { getCollection, getEntry, render } from 'astro:content';
+import BlogPost from '../../layouts/BlogPost.astro';
+
+export async function getStaticPaths() {
+    const posts = await getCollection('blog');
+    
+    return posts.map((post) =>{
+        // Derive slug from id by removing .md/.mdx extension
+        const slug = typeof post.id === 'string' ? post.id.replace(/\.(md|mdx)$/, '') : '';
+        if (!slug) return null;
+        
+        return ({
+            params: { slug },
+            props: { postId: post.id },
+        })}
+    ).filter(Boolean);
+}
+
+interface Props {
+    postId: string;
+}
+
+const { postId } = Astro.props;
+const currentPost = await getEntry('blog', postId);
+
+if (!currentPost) {
+    return new Response('Not found', { status: 404 });
+}
+
+const allPosts = await getCollection('blog');
+const sortedPosts = allPosts.sort((a, b) => new Date(a.data.pubDate).valueOf() - new Date(b.data.pubDate).valueOf());
+const currentIndex = sortedPosts.findIndex(p => p.id === currentPost.id);
+const prevPost = currentIndex > 0 ? sortedPosts[currentIndex - 1] : undefined;
+const nextPost = currentIndex < sortedPosts.length - 1 ? sortedPosts[currentIndex + 1] : undefined;
+
+const prevSlug = prevPost ? (typeof prevPost.id === 'string' ? prevPost.id.replace(/\.(md|mdx)$/, '') : '') : undefined;
+const nextSlug = nextPost ? (typeof nextPost.id === 'string' ? nextPost.id.replace(/\.(md|mdx)$/, '') : '') : undefined;
+
+const { Content } = await render(currentPost);
+const data = {
+    ...currentPost.data,
+    prevBlogSlug: prevSlug,
+    nextBlogSlug: nextSlug,
+    prevTitle: prevPost?.data.title,
+    nextTitle: nextPost?.data.title,
+};
+---
+
+<BlogPost {...data}>
+	<Content />
+</BlogPost>

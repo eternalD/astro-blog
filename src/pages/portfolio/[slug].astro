@@ -1,0 +1,33 @@
+---
+import { getCollection, getEntry, render } from 'astro:content';
+import PortfolioItem from '../../layouts/PortfolioItem.astro';
+
+export async function getStaticPaths() {
+	const portfolio = await getCollection('portfolio');
+	return portfolio.map((item) => {
+		const slug = typeof item.id === 'string' ? item.id.replace(/\.(md|mdx)$/, '') : '';
+		if (!slug) return null;
+		return ({
+			params: { slug },
+			props: { itemId: item.id },
+		});
+	}).filter(Boolean);
+}
+
+interface Props {
+	itemId: string;
+}
+
+const { itemId } = Astro.props;
+const currentItem = await getEntry('portfolio', itemId);
+
+if (!currentItem) {
+	return new Response('Not found', { status: 404 });
+}
+
+const { Content } = await render(currentItem);
+---
+
+<PortfolioItem {...currentItem.data}>
+	<Content />
+</PortfolioItem>

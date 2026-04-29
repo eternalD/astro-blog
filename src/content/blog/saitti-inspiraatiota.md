@@ -15,7 +15,7 @@ EDIT: Olen nyt implementoinut joustavan typografian palveluun.
 
 ## Suunnittelija Andy Clarke
 
-Olen pidemmän aikaa seurannut <a href="https://stuffandnonsense.co.uk">Andy Clarken</a> tekemisiä. Hänen <a href="https://wheelman.world/">Wheelman World</a> esimerkkisaitti on huikea esimerkki siitä, että mitä tapahtuu kun luovutaan templateajattelusta ja tehdään jotain mikä on oikeasti todella hienoa. 
+Olen pidemmän aikaa seurannut <a href="https://stuffandnonsense.co.uk">Andy Clarken</a> tekemisiä. Hänen <a href="https://stuffandnonsense.co.uk/design">työnsä</a> ovat huikea esimerkki siitä, että mitä tapahtuu kun luovutaan templateajattelusta ja tehdään jotain mikä on oikeasti todella hienoa. 
 
 Pidän todella paljon palvelussa
 

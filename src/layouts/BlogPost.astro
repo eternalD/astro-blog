@@ -84,28 +84,37 @@ const { title, description, pubDate, updatedDate, heroImage, prevBlogSlug, nextB
 				font-style: italic;
 				padding-top:.5rem
 			}
-
+		
+			
 		.nav-next-prev {
 			display: grid;
-  			grid-template-columns: repeat(auto-fit,minmax(min(18rem,100%),1fr));
-  			gap: 2rem;
+    		grid-template-columns: repeat(auto-fit,minmax(min(18rem,100%),1fr));
+    		gap: 1rem;
+		}
+
+		
+		.nav-next-prev a {
+			color: var(--sl-color-gray-2);
+			text-decoration: none;
+		}
+
+		.nav-next-prev a:hover {
+			text-decoration: underline;
 		}
 
 		.nav-next-prev li {
 			list-style-type: none;
 			align-items: center;
   			justify-content: flex-start;
-  			gap: .5rem;
-  			width: 100%;
-  			flex-basis: calc(50% - .5rem);
+  			gap: 1rem;
+  			flex-basis: calc(50% - 1rem);
   			flex-grow: 1;
   			border: 1px solid var(--sl-color-gray-5);
-  			border-radius: .5rem;
-  			padding-inline-start: .5rem;
-			padding-inline-end: .5rem;
-			padding-block-start: .5rem;
-			padding-block-end: .5rem;  
-  			text-decoration: none;
+  			border-radius: 1rem;
+  			padding-inline-start: 1rem;
+			padding-inline-end: 1rem;
+			padding-block-start: 1rem;
+			padding-block-end: 1rem;  
   			color: var(--sl-color-gray-2);
   			box-shadow: var(--sl-shadow-md);
   			overflow-wrap: anywhere;

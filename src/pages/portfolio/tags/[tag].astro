@@ -1,0 +1,195 @@
+---
+import BaseHead from '../../../components/BaseHead.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import FormattedDate from '../../../components/FormattedDate.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+	const portfolios = await getCollection('portfolio');
+	const tags = new Set<string>();
+	
+	portfolios.forEach(portfolio => {
+		if (portfolio.data.tags) {
+			portfolio.data.tags.forEach(tag => {
+				tags.add(tag);
+			});
+		}
+	});
+
+	return Array.from(tags).map(tag => ({
+		params: { tag: tag.toLowerCase().replace(/\s+/g, '-') },
+		props: { portfolios }
+	}));
+}
+
+type Props = {
+	portfolios: any[];
+};
+
+const { portfolios } = Astro.props;
+const tagParam = Astro.params.tag;
+
+// The tag param is already slugified from getStaticPaths
+// e.g., "lean-ux" - no need to normalize it
+const normalizedTag = tagParam;
+
+// Filter portfolios by tag
+const filteredPortfolios = portfolios
+	.filter(p => 
+		p.data.tags && 
+		p.data.tags.some((t: string) => t.toLowerCase().replace(/\s+/g, '-') === normalizedTag)
+	)
+	.sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf());
+
+// Get the original tag name from the first matching portfolio
+const originalTagName = portfolios
+	.flatMap(p => p.data.tags || [])
+	.find((t: string) => t.toLowerCase().replace(/\s+/g, '-') === normalizedTag) || tagParam;
+---
+
+<!doctype html>
+<html lang="fi">
+	<head>
+		<BaseHead title={`Tag: ${originalTagName}`} description={`Portfolio items tagged with ${originalTagName}`} />
+		<style>
+			main {
+				width: 960px;
+				max-width: calc(100% - 2em);
+				margin: 0 auto;
+				padding: 1rem;
+			}
+
+			.tag-header {
+				text-align: center;
+				margin-bottom: 3rem;
+			}
+
+			.tag-header h1 {
+				margin: 0;
+				font-size: 2.369rem;
+			}
+
+			.tag-header p {
+				color: rgb(var(--gray));
+				margin-top: 0.5rem;
+			}
+
+			ul {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 2rem;	
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				font-size: var(--fluid-16-24);
+			}
+
+			ul li {
+				width: calc(50% - 1rem);
+			}
+
+			ul li * {
+				text-decoration: none;
+				transition: 0.2s ease;
+			}
+
+			ul li img {
+				margin-bottom: 0.5rem;
+				border-radius: 12px;
+			}
+
+			ul li a {
+				display: block;
+			}
+
+			.title {
+				margin: 0;
+				color: rgb(var(--black));
+				line-height: 1;
+			}
+
+			.date {
+				margin: 0;
+				color: rgb(var(--gray));
+				font-size: 0.875rem;
+			}
+
+			ul li a:hover h4,
+			ul li a:hover .date {
+				color: rgb(var(--accent));
+			}
+
+			.no-items {
+				text-align: center;
+				color: rgb(var(--gray));
+				padding: 2rem;
+			}
+
+			@media (max-width: 720px) {
+				main {
+					width: 100%;
+				}
+
+				ul {
+					gap: 0.5em;
+				}
+
+				ul li {
+					width: 100%;
+					text-align: center;
+				}
+
+				.tag-header h1 {
+					font-size: 1.563rem;
+				}
+			}
+
+			@media (prefers-color-scheme: dark) {
+				.title {
+					color: #fff;
+				}
+
+				.date {
+					color: #fff;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<Header />
+		<main>
+			<div class="tag-header">
+				<h1>Tag: {originalTagName}</h1>
+				<p>{filteredPortfolios.length} {filteredPortfolios.length === 1 ? 'item' : 'items'} found</p>
+			</div>
+
+			{filteredPortfolios.length > 0 ? (
+				<ul>
+					{filteredPortfolios.map(portfolio => {
+						const portfolioSlug = portfolio.id.replace(/\.md$/, '');
+						return (
+							<li>
+								<a href={`/portfolio/${portfolioSlug}/`}>
+									{portfolio.data.heroImage && (
+										<img width={200} height={100} src={portfolio.data.heroImage} alt="" />
+									)}
+									<h4 class="title">{portfolio.data.title}</h4>
+									<div class="date">
+										<FormattedDate date={portfolio.data.pubDate} />
+									</div>
+								</a>
+							</li>
+						);
+					})}
+				</ul>
+			) : (
+				<div class="no-items">
+					<p>No portfolio items found for this tag.</p>
+				</div>
+			)}
+		</main>
+		<Footer />
+	</body>
+</html>

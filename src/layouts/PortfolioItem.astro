@@ -113,13 +113,11 @@ const { title, description, pubDate, updatedDate, heroImage, tags } = Astro.prop
 						<h1>{title}</h1>
 						<hr />
 						<ul class="tags">
-							<!-- TODO:
-							2. a href wrapped tag list
-							3. EPIC: TAG ARCHIVE AS NEXT STEP ...[tag]  -->
 							{tags.map(tag => (
-								<li class="tag-item">{tag}</li>
+								<li class="tag-item">
+									<a href={`/portfolio/tags/${tag.toLowerCase().replace(/\s+/g, '-')}`}>{tag}</a>
+								</li>
 							))}
-							<!--{tags}-->
 						</ul>
 					</div>
 					<slot />

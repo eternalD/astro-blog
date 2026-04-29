@@ -1,0 +1,157 @@
+---
+import BaseHead from '../../../components/BaseHead.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import { getCollection } from 'astro:content';
+
+const portfolios = await getCollection('portfolio');
+
+// Collect all tags with their counts
+const tagMap = new Map<string, { name: string; count: number; slug: string }>();
+
+portfolios.forEach(portfolio => {
+	if (portfolio.data.tags) {
+		portfolio.data.tags.forEach(tag => {
+			const slug = tag.toLowerCase().replace(/\s+/g, '-');
+			if (tagMap.has(slug)) {
+				const existing = tagMap.get(slug)!;
+				existing.count++;
+			} else {
+				tagMap.set(slug, { name: tag, count: 1, slug });
+			}
+		});
+	}
+});
+
+// Convert to array and sort by name
+const tags = Array.from(tagMap.values()).sort((a, b) => a.name.localeCompare(b.name));
+---
+
+<!doctype html>
+<html lang="fi">
+	<head>
+		<BaseHead title="Portfolio Tags" description="Browse portfolio items by tag" />
+		<style>
+			main {
+				width: 960px;
+				max-width: calc(100% - 2em);
+				margin: 0 auto;
+				padding: 1rem;
+			}
+
+			h1 {
+				text-align: center;
+				font-size: 2.369rem;
+			}
+
+			.tags-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+				gap: 1.5rem;
+				margin-top: 2rem;
+			}
+
+			.tag-card {
+				padding: 1.5rem;
+				border-radius: 12px;
+				background-color: #f0f0f0;
+				text-decoration: none;
+				transition: 0.2s ease;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
+			}
+
+			.tag-card:hover {
+				background-color: rgb(var(--accent));
+				transform: translateY(-2px);
+			}
+
+			.tag-card:hover .tag-name {
+				color: #fff;
+			}
+
+			.tag-card:hover .tag-count {
+				color: rgba(255, 255, 255, 0.9);
+			}
+
+			.tag-name {
+				font-size: 1.25rem;
+				font-weight: 600;
+				margin: 0;
+				color: rgb(var(--black));
+				transition: 0.2s ease;
+			}
+
+			.tag-count {
+				font-size: 0.875rem;
+				color: rgb(var(--gray));
+				margin-top: 0.5rem;
+				transition: 0.2s ease;
+			}
+
+			.no-tags {
+				text-align: center;
+				color: rgb(var(--gray));
+				padding: 2rem;
+			}
+
+			@media (max-width: 720px) {
+				main {
+					width: 100%;
+				}
+
+				h1 {
+					font-size: 1.563rem;
+				}
+
+				.tags-grid {
+					grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+					gap: 1rem;
+				}
+			}
+
+			@media (prefers-color-scheme: dark) {
+				.tag-card {
+					background-color: #333;
+				}
+
+				.tag-name {
+					color: #fff;
+				}
+
+				.tag-count {
+					color: #aaa;
+				}
+
+				.tag-card:hover .tag-count {
+					color: rgba(255, 255, 255, 0.9);
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<Header />
+		<main>
+			<h1>Portfolio Tagit</h1>
+
+			{tags.length > 0 ? (
+				<div class="tags-grid">
+					{tags.map(tag => (
+						<a href={`/portfolio/tags/${tag.slug}`} class="tag-card">
+							<h2 class="tag-name">{tag.name}</h2>
+							<p class="tag-count">{tag.count} {tag.count === 1 ? 'item' : 'items'}</p>
+						</a>
+					))}
+				</div>
+			) : (
+				<div class="no-tags">
+					<p>No tags found.</p>
+				</div>
+			)}
+		</main>
+		<Footer />
+	</body>
+</html>

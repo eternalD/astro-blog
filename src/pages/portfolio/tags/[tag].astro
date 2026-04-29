@@ -161,8 +161,8 @@ const originalTagName = portfolios
 		<Header />
 		<main>
 			<div class="tag-header">
-				<h1>Tag: {originalTagName}</h1>
-				<p>{filteredPortfolios.length} {filteredPortfolios.length === 1 ? 'item' : 'items'} found</p>
+				<h1>Tagi: {originalTagName}</h1>
+				<p>{filteredPortfolios.length} {filteredPortfolios.length === 1 ? 'kohde' : 'kohdetta'} löytyi</p>
 			</div>
 
 			{filteredPortfolios.length > 0 ? (
@@ -186,7 +186,7 @@ const originalTagName = portfolios
 				</ul>
 			) : (
 				<div class="no-items">
-					<p>No portfolio items found for this tag.</p>
+					<p>Ei portfolio kohteita löydetty tällä tagilla.</p>
 				</div>
 			)}
 		</main>

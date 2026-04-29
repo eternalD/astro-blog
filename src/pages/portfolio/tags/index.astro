@@ -30,7 +30,7 @@ const tags = Array.from(tagMap.values()).sort((a, b) => a.name.localeCompare(b.n
 <!doctype html>
 <html lang="fi">
 	<head>
-		<BaseHead title="Portfolio Tags" description="Browse portfolio items by tag" />
+		<BaseHead title="Portfolio Tagit" description="Katso portfolion kohteita tagien mukaan" />
 		<style>
 			main {
 				width: 960px;
@@ -142,13 +142,13 @@ const tags = Array.from(tagMap.values()).sort((a, b) => a.name.localeCompare(b.n
 					{tags.map(tag => (
 						<a href={`/portfolio/tags/${tag.slug}`} class="tag-card">
 							<h2 class="tag-name">{tag.name}</h2>
-							<p class="tag-count">{tag.count} {tag.count === 1 ? 'item' : 'items'}</p>
+							<p class="tag-count">{tag.count} {tag.count === 1 ? 'kohde' : 'kohdetta'}</p>
 						</a>
 					))}
 				</div>
 			) : (
 				<div class="no-tags">
-					<p>No tags found.</p>
+					<p>Ei tageja.</p>
 				</div>
 			)}
 		</main>

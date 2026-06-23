@@ -9,7 +9,7 @@ heroImage: '/blog-placeholder-5.jpg'
 
 ## Gridi-mallin miettiminen palveluun
 
-Kuten <a href="/blog/saitti-inspiraatiota/">aiemmin puhuinkin</a> tykkään sisäkkäisistä gridi-malleista joka on suuniteltu palvelun sisällön ehdoilla sen sijaan että runnoisin 12-16 palstaisen mallin paikalleen.
+Kuten [aiemmin puhuinkin](/blog/saitti-inspiraatiota/) tykkään sisäkkäisistä gridi-malleista joka on suuniteltu palvelun sisällön ehdoilla sen sijaan että runnoisin 12-16 palstaisen mallin paikalleen.
 
 Tätä haluaisinkin hiukan palloitella muiden tekijöiden kanssa. 
 

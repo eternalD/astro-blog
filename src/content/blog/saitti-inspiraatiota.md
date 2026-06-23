@@ -9,19 +9,19 @@ heroImage: '/blog-placeholder-2.jpg'
 
 ## Joustavat Gridi ja typografia
 
-Olen kiinnostunut typografiasta ja haluaisinkin, että palveluni kuvastaisi sitä. <a href="https://utopia.fyi/">Utopia</a> palvelussa on hyvin kuvattu se mitä tarkoitan joustavalla typografialla.
+Olen kiinnostunut typografiasta ja haluaisinkin, että palveluni kuvastaisi sitä. [Utopia](https://utopia.fyi/) palvelussa on hyvin kuvattu se mitä tarkoitan joustavalla typografialla.
 
 EDIT: Olen nyt implementoinut joustavan typografian palveluun.
 
 ## Suunnittelija Andy Clarke
 
-Olen pidemmän aikaa seurannut <a href="https://stuffandnonsense.co.uk">Andy Clarken</a> tekemisiä. Hänen <a href="https://stuffandnonsense.co.uk/design">työnsä</a> ovat huikea esimerkki siitä, että mitä tapahtuu kun luovutaan templateajattelusta ja tehdään jotain mikä on oikeasti todella hienoa. 
+Olen pidemmän aikaa seurannut [Andy Clarken](https://stuffandnonsense.co.uk) tekemisiä. Hänen [työnsä](https://stuffandnonsense.co.uk/design) ovat huikea esimerkki siitä, että mitä tapahtuu kun luovutaan templateajattelusta ja tehdään jotain mikä on oikeasti todella hienoa. 
 
 Pidän todella paljon palvelussa
 
-* monipuolinen <a href="https://www.smashingmagazine.com/2019/07/inspired-design-decisions-pressing-matters/"/>compound-gridin käyttö</a>. Oheisessa pitkähkössä artikkelissa on kuvattu seikkaperäisesti mitä tarkoitan. 
+* monipuolinen [compound-gridin käyttö](https://www.smashingmagazine.com/2019/07/inspired-design-decisions-pressing-matters/). Oheisessa pitkähkössä artikkelissa on kuvattu seikkaperäisesti mitä tarkoitan.
 
-* tässä myös <a href="https://stuffandnonsense.co.uk/layoutlove/index.html">Layout Love -työkalu</a> ja <a href="https://codepen.io/michellebarker/pen/zYOMYWv">Michelle Barkerin toinen työkalu</a>. Suosittelen kuitenkin katsastamaan Layout Lovesta miten gridi integroidaan haluaamaasi elementtiin.
+* tässä myös [Layout Love -työkalu](https://stuffandnonsense.co.uk/layoutlove/index.html) ja [Michelle Barkerin toinen työkalu](https://codepen.io/michellebarker/pen/zYOMYWv). Suosittelen kuitenkin katsastamaan Layout Lovesta miten gridi integroidaan haluaamaasi elementtiin.
 * Omanlainen muotokieli
 * Hyvin valittu typografia
 * Pinnan alla oleva CSS on todella mielenkiintoista lukea

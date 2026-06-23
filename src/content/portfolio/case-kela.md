@@ -9,7 +9,7 @@ tags:
     - Yhteissuunnittelu
 ---
 
-Eräänä päivänä hyvä ystäväni <a href="https://www.linkedin.com/in/tonikeskinen/">Toni Keskinen</a> oli yhteydessä minuun ja tarvitsi apua asiakkaansa <a href="https://kela.fi">Kelan</a> kanssa.
+Eräänä päivänä hyvä ystäväni [Toni Keskinen](https://www.linkedin.com/in/tonikeskinen/) oli yhteydessä minuun ja tarvitsi apua asiakkaansa [Kelan](https://kela.fi) kanssa.
 
 Sovimme, että tapaan ekaksi tiimin ja katsotaan löytyisikö omasta osaamisalueestani heille apuja.
 
@@ -25,7 +25,7 @@ Uskon vahvasti osallistavaan suunnitteluun niin, että tiimi omistaa asian eikä
 
 ## Lean UX metodit auttoivat yhteissuunnittelussa
 
-<a href="https://jeffgothelf.com/">Jeff Gothelf</a> (Lean Ux kirjan toinen kirjoittaja) oli kouluttamassa <a href="https://sc5.io">SC5:n</a> (nykyään Nordcloud) asiakkaita näiden menetelmien hyödyntämiseen käytännön tasolla. Yhtenä tiiminä oli silloin Tonin toinen asiakas. Kahden päivän intensiivisen tekemisen perusteella sekä saadun palautteen osalta nämä menetelmät soveltuivat erinomaisesti käytäntöön. Haluaisimme soveltaa samankaltaisia oppeja myös tähän hankkeeseen.
+[Jeff Gothelf](https://jeffgothelf.com/) (Lean Ux kirjan toinen kirjoittaja) oli kouluttamassa [SC5:n](https://sc5.io) (nykyään Nordcloud) asiakkaita näiden menetelmien hyödyntämiseen käytännön tasolla. Yhtenä tiiminä oli silloin Tonin toinen asiakas. Kahden päivän intensiivisen tekemisen perusteella sekä saadun palautteen osalta nämä menetelmät soveltuivat erinomaisesti käytäntöön. Haluaisimme soveltaa samankaltaisia oppeja myös tähän hankkeeseen.
 
 ## Kelan oma henkilöstö hakemaan palautetta 
 
@@ -44,7 +44,7 @@ Kun palautteet paperiprotoihin ja analysoitu tieto eri kanavista ja kosketuspist
 
 Hyödynsimme protoiluosaamistani ja rakensin tämän pohjalta ensimmäiset prototyypit selaimeen Kelan sivuilla olevista pikaopas-malleista. 
 
-Ideana oli, että elämäntilanteiden lisäksi tarjoiltiin pikaopas siihen mitä milloinkin tapahtuu ja kenen vastuulla asia on (esim. Kela, hakija). Prototyypista tuotantokelpoiseksi jatkojalosti muistaakseni <a href="https://www.ambientia.fi/">Ambientia</a>.
+Ideana oli, että elämäntilanteiden lisäksi tarjoiltiin pikaopas siihen mitä milloinkin tapahtuu ja kenen vastuulla asia on (esim. Kela, hakija). Prototyypista tuotantokelpoiseksi jatkojalosti muistaakseni [Ambientia](https://www.ambientia.fi/).
 
 <img src="/portfolio-kela-1.jpg" alt="" width=960 height=480/>
 

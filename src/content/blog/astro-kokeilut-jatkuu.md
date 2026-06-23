@@ -7,17 +7,17 @@ heroImage: '/blog-placeholder-4.jpg'
 
 Päätin jatkaa Astron parissa ja testata kuinka helppoa erilaisten asioiden paikalleen laitto on. Päädyin lisäämään seuraavanlaiset asiat:
 
-* <a href="#view-transitiot">View transitiot</a>
-* <a href="#joustava-typografia">Joustavan typografia</a>
-* <a href="#dark-mode-eka-versio">Dark mode (eka versio)</a>
+* [View transitiot](#view-transitiot)
+* [Joustavan typografia](#joustava-typografia)
+* [Dark mode (eka versio)](#dark-mode-eka-versio)
 
 ## View Transitiot
 
-Koska Chromium pohjaiset selaimet tukevat View transitioita päätin ottaa ne kokeiluun ja laittaa ne paikalleen. Ohjeet olivat suht iisejä seurata ja löytyvät <a href="https://docs.astro.build/en/guides/view-transitions/">täältä</a>. 
+Koska Chromium pohjaiset selaimet tukevat View transitioita päätin ottaa ne kokeiluun ja laittaa ne paikalleen. Ohjeet olivat suht iisejä seurata ja löytyvät [täältä](https://docs.astro.build/en/guides/view-transitions/). 
 
 ## Joustava typografia
 
-Käytin <a href="/blog/saitti-inspiraatiota/">aiemmassa artikkelissa</a> mainitsemaani <a href="https://utopia.fyi">Utopia.fyi</a> palvelua generoimaan CSS-clampit joita sitten olen ripotellut pitkin palveua. Käytännön tasolla näet ne toiminnassa kun pienennät tai suurennat selainikkunaa tai käytät palvelua eri laitteilla. Typografialle on annettu minimikoko ja maksimikoko mihin se skaalautuu.
+Käytin [aiemmassa artikkelissa](/blog/saitti-inspiraatiota/) mainitsemaani [Utopia.fyi](https://utopia.fyi) -palvelua generoimaan CSS-clampit joita sitten olen ripotellut pitkin palvelua. Käytännön tasolla näet ne toiminnassa kun pienennät tai suurennat selainikkunaa tai käytät palvelua eri laitteilla. Typografialle on annettu minimikoko ja maksimikoko mihin se skaalautuu.
 
 ## Dark mode (eka versio)
 

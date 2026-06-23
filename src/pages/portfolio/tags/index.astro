@@ -140,7 +140,7 @@ const tags = Array.from(tagMap.values()).sort((a, b) => a.name.localeCompare(b.n
 			{tags.length > 0 ? (
 				<div class="tags-grid">
 					{tags.map(tag => (
-						<a href={`/portfolio/tags/${tag.slug}`} class="tag-card">
+						<a href={`/portfolio/tags/${tag.slug}/`} class="tag-card">
 							<h2 class="tag-name">{tag.name}</h2>
 							<p class="tag-count">{tag.count} {tag.count === 1 ? 'kohde' : 'kohdetta'}</p>
 						</a>
